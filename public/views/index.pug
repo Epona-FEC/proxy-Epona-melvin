@@ -1,14 +1,16 @@
 doctype html
 html
   head
+    link(rel='stylesheet' href='./style.css', type='text/css')
   body
-    #app1
-    #app2
-    #app3
-    #app4
+    .grid-container
+      #app.Carousel
+      #item-info.ProductDetails
+      #app3.Reviews
+      #app4.MoreFrom
     script.
-      window.serviceId = #{serviceId};
+      window.productId = #{productId};
     script(src='http://localhost:3003/build.js')
-    script(src='http://localhost:3002/build.js')
-    script(src='http://localhost:3004/build.js')
-    script(src='http://localhost:3000/build.js')
+    script(src='http://localhost:3002/bundle.js')
+    script(src='http://localhost:3004/bundle.js')
+    script(src='http://localhost:3000/bundle.js')
