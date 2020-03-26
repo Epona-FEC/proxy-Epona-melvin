@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+  body
+    #app1
+    #app2
+    #app3
+    #app4
+    script.
+      window.serviceId = #{serviceId};
+    script(src='http://localhost:3003/build.js')
+    script(src='http://localhost:3002/build.js')
+    script(src='http://localhost:3004/build.js')
+    script(src='http://localhost:3000/build.js')
