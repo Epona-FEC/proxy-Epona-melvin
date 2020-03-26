@@ -8,10 +8,17 @@
     "node": ">=6.13.0"
   },
   "scripts": {
+    "start": "node server/app.js"
   },
   "dependencies": {
+    "express": "^4.17.1",
+    "pug": "^2.0.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   },
   "devDependencies": {
-    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor"
+    "eslint": "^6.8.0",
+    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",
+    "jest": "^25.2.2"
   }
 }
