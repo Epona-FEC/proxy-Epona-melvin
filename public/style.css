@@ -1,28 +1,33 @@
+
 .grid-container{
   margin: 0 auto;
   width:95%;
   max-width:1440px;
 }
-@media screen and (min-width:960px) {
-  .grid-container {
-    width: 80%;
-  }
+
+body{
+  font-family: 'lato',sans-serif;
+
+}
+
+.Reviews {
+  margin: 50px auto;
 }
 
 @media screen and (min-width:800px) {
-  .grid-container {
-    display: grid;
-    grid-template-columns: 1.9fr 1fr;
-    grid-template-rows: 1fr, 1fr, 1fr;
-    grid-template-areas: "Carousel ProductDetails" "Reviews ." "MoreFrom MoreFrom";
-  }
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr minmax(1fr, 200px);
+  grid-template-rows: 1fr 0.8fr 1.2fr 1fr;
+  grid-template-areas: "Carousel Carousel ProductDetails ProductDetails" "Reviews Reviews ProductDetails ProductDetails" "Reviews Reviews . ." "MoreFrom MoreFrom MoreFrom MoreFrom";
+}
 
-  .ProductDetails { grid-area: ProductDetails; }
+.Carousel { grid-area: Carousel; }
 
-  .Carousel { grid-area: Carousel; }
+.ProductDetails { grid-area: ProductDetails; }
 
-  .Reviews { grid-area: Reviews; min-width: 750px; }
+.Reviews { grid-area: Reviews; }
 
-  .MoreFrom { grid-area: MoreFrom; }
+.MoreFrom { grid-area: MoreFrom; }
 
 }
